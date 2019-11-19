@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 
-import java.time.MonthDay;
 
 @Data
 @Builder
@@ -16,6 +15,7 @@ public class Occasion {
 
     @Id
     private String id;
+    private String userId;
     private String description;
     private int day;
     private int month;
